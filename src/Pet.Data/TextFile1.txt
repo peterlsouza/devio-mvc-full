@@ -1,0 +1,53 @@
+﻿-Install-Package Microsoft.EntityFrameworkCore na Data
+Create MeuDbContext
+
+Mapeamos tamanho de coluna, etc usando o FluentAPI.. forma correta quando se tem varias camadas
+desta forma não poluimos as entidades com os DataAnnotations..
+
+create ProdutoMapping : IEntityTypeConfiguration<Produto> e implementado a interface
+Criado as demais mappings
+
+Instalamos tbm: Install-Package Microsoft.EntityFrameworkCore.Relational  (para especificar colum no mapping precisa deste)
+
+Apos configurar o MeuDbContext -> Add-Migration Initial -Verbose -Context MeuDbContext
+
+**Precisei atualizar o EF para funcionar
+
+instalamos: Install-Package Microsoft.EntityFrameworkCore.SqlServer
+geramos script SQL com: Script-Migration -Context MeuDbContext para salvar na pasta SQL **Não obrigatorio.. apenas para gerar o arquivo caso necessario..
+
+Update-Database -Context MeuDbContext e ApplicationDbContext para criar as tabelas e atualizar o banco
+
+-criado as IRepository's em  Business.Interfaces
+-criado as Repository's em  Business.Data e implementamos as interfaces
+apos criar e implementar as repositorys, injeção de dependenca na Startup
+ services.AddScoped<MeuDbContext>();
+            services.AddScoped<IProdutoRepository, ProdutoRepository>();
+            services.AddScoped<IFornecedorRepository, FornecedorRepository>();
+            services.AddScoped<IEnderecoRepository, EnderecoRepository>();
+
+
+Renomeamos a pasta Models da App para ViewModels e criamos as classes..  ...ViewModel
+
+Install-Package AutoMapper.Extensions.Microsoft.DependencyInjection na APP
+add automapper na startup services.AddAutoMapper(typeof(Startup));
+Criei pasta AutoMapper e classe: AutoMapperConfig
+
+Gerei a controller Fornecedores via Scaffold.. 
+apos gerar deletamos o public DbSet<Pet.App.ViewModels.FornecedorViewModel> FornecedorViewModel { get; set; } do DBContext
+
+
+
+configuramos na startup para cultura PT-BR
+criamos um script em _ValidationScriptsPartial para vaidar os valores, data e outros
+
+
+
+*Instalamos o FluentValidation 
+
+
+para rodar a APP em SelfHosting
+  dotnet run --project Pet.App.csproj
+
+
+

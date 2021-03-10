@@ -1,0 +1,12 @@
+C:\Labs\DevIO_DotNet\CRUDMVCFull\CRUD_MVC_Full\src\Pet.Data\bin\Debug\netcoreapp3.1\Pet.Data.deps.json
+C:\Labs\DevIO_DotNet\CRUDMVCFull\CRUD_MVC_Full\src\Pet.Data\bin\Debug\netcoreapp3.1\Pet.Data.dll
+C:\Labs\DevIO_DotNet\CRUDMVCFull\CRUD_MVC_Full\src\Pet.Data\obj\Debug\netcoreapp3.1\Pet.Data.csprojAssemblyReference.cache
+C:\Labs\DevIO_DotNet\CRUDMVCFull\CRUD_MVC_Full\src\Pet.Data\obj\Debug\netcoreapp3.1\Pet.Data.AssemblyInfoInputs.cache
+C:\Labs\DevIO_DotNet\CRUDMVCFull\CRUD_MVC_Full\src\Pet.Data\obj\Debug\netcoreapp3.1\Pet.Data.AssemblyInfo.cs
+C:\Labs\DevIO_DotNet\CRUDMVCFull\CRUD_MVC_Full\src\Pet.Data\bin\Debug\netcoreapp3.1\Pet.Business.dll
+C:\Labs\DevIO_DotNet\CRUDMVCFull\CRUD_MVC_Full\src\Pet.Data\bin\Debug\netcoreapp3.1\Pet.Data.pdb
+C:\Labs\DevIO_DotNet\CRUDMVCFull\CRUD_MVC_Full\src\Pet.Data\bin\Debug\netcoreapp3.1\Pet.Business.pdb
+C:\Labs\DevIO_DotNet\CRUDMVCFull\CRUD_MVC_Full\src\Pet.Data\obj\Debug\netcoreapp3.1\Pet.Data.csproj.CopyComplete
+C:\Labs\DevIO_DotNet\CRUDMVCFull\CRUD_MVC_Full\src\Pet.Data\obj\Debug\netcoreapp3.1\Pet.Data.dll
+C:\Labs\DevIO_DotNet\CRUDMVCFull\CRUD_MVC_Full\src\Pet.Data\obj\Debug\netcoreapp3.1\Pet.Data.pdb
+C:\Labs\DevIO_DotNet\CRUDMVCFull\CRUD_MVC_Full\src\Pet.Data\obj\Debug\netcoreapp3.1\Pet.Data.csproj.CoreCompileInputs.cache
