@@ -73,7 +73,8 @@ namespace Pet.App.Controllers
             return RedirectToAction(nameof(Index));
             
         }
-
+        
+        //vai fornecer a viw de edição..
         [ClaimsAuthorize("Fornecedor", "Editar")]
         [Route("editar-fornecedor/{id:guid}")]
         public async Task<IActionResult> Edit(Guid id)
@@ -86,7 +87,8 @@ namespace Pet.App.Controllers
             }
             return View(fornecedorViewModel);
         }
-
+        
+        //vai fazer o post de edição
         [ClaimsAuthorize("Fornecedor", "Editar")]
         [Route("editar-fornecedor/{id:guid}")]
         [HttpPost]
